@@ -1,0 +1,27 @@
+.page-title {
+    /* Colors */
+    color:#ffffff;
+
+    /* Aligns */
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    /* Colors */
+    color:#ffffff;
+
+    /* Aligns */
+    margin-top: 5px;
+}
+
+.page-logo {
+    /* Sizes */
+    font-size: 25px;
+
+    /* Aligns */
+    margin: 30px auto;
+    font-family: 'Courier New', Courier, monospace;
+
+    /* Colors */
+    color: aliceblue;
+}

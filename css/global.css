@@ -1,0 +1,97 @@
+@keyframes fadeIn{
+    0%{
+        opacity: 0.3;
+    }
+    50%, 100%{
+        opacity: 1;
+    }
+}
+
+input[type="number"]{
+    /* Sizes */
+    width: 100%;
+    border: none;
+    font-size: 22px;
+    border-radius: 25px;
+    padding: 10px;
+
+    /* Colors */
+    background-color: rgba(51, 51, 77, 0);
+    border-bottom: 2px solid rgb(154, 154, 191);
+    color: lime;
+
+    /* Aligns */
+    margin-bottom: 40px;
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
+}
+
+input[type="number"]:hover{
+    /* Colors */
+    background-color: rgba(51, 51, 77, 0.493);
+    outline-style: outset;
+    color: aliceblue;
+}
+
+button{
+    cursor: pointer;
+
+    /* Sizes */
+    width: 200px;
+    padding: 8px;
+    border-radius: 0px;
+
+    /* Colors */
+    background-color: black;
+    color: lime;
+    border: none;
+    box-shadow: 5px 5px 1px rgba(0, 0, 255, 0.589), -5px -5px 1px rgba(255, 0, 0, 0.589);
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+button:hover{
+    /* Colors */
+    box-shadow: 5px 5px 1px rgb(0, 0, 255), -5px -5px 1px rgb(255, 0, 0);
+
+    /* Sizes */
+    border-radius: 25px;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, a{
+    /* Colors */
+    text-shadow: 2.5px 2.5px 1px rgba(0, 0, 0, 0.8);
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, span:hover, a:hover{
+    /* Colors */
+    text-shadow: 100px 100px 100px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes content-animating{
+    0%, 100%{
+        content: " ";
+    }
+    50%{
+        content: "_";
+    }
+}
+
+.underscore {
+    /* Colors */
+    background-color: rgb(58, 58, 214);
+}
+
+.underscore::after{
+    content: "_";
+    
+    /* Animation */
+    animation-name: content-animating;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}

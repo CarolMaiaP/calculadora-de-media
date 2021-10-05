@@ -1,0 +1,57 @@
+.container {
+    /* Aligns */
+    margin: auto;
+    margin-top: 0px;
+
+    /* Animation */
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+    animation-iteration-count: unset;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Sizes */
+    padding: 20px;
+    height: 80%;
+    width: 60%;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+
+    /* Colors */
+    background-color: rgba(56, 56, 82, 0.308);
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+@keyframes container-color-changer {
+    0%, 100%{
+        /* Colors */
+        background-color: rgba(56, 56, 82, 0.308);
+        color: aliceblue;
+    }
+    25%{
+        /* Colors */
+        background-color: rgba(0, 208, 255, 0.145);
+    }
+    50%{
+        /* Colors */
+        background-color: rgba(0, 0, 0, 0.248);
+        color: lime;
+    }
+}
+
+.container:hover{
+    /* Sizes */
+    height: 100%;
+    border-radius: 0px;
+
+    /* Animations */
+    animation-name: container-color-changer;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}

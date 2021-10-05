@@ -1,60 +1,45 @@
-body {
-  font-family: 'Roboto Mono',monospace;
-  min-height: 800px;
-  background-image: url('../img/201635.png');
-  background-color: #000000;
-  background-size: 54vh;
-  background-position: bottom;
-  background-repeat: no-repeat;
-}
-
-.container {
-  text-align: center;
-  padding: 20px;
-  height: 100vh;
-}
-
-.page-title {
-  color:#ffffff;
-  margin: 0 0 5px;
-}
-
-.page-subtitle {
-  color:#ffffff;
-  margin-top: 5px;
-}
-
-.page-logo {
-  width: 200px;
-}
-
 .formulario{
-  margin: 20px;
+    /* Sizes */
+    width: 50%;
+    padding: 15px;
+    border-radius: 25px;
+
+    /* Aligns */
+    text-align: center;
+    margin: 20px;
+    transform: rotateY(0deg);
+
+    /* Colors */
+    background-color: rgba(0, 0, 0, 0.487);
+
+    /* Times */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
 }
 
-input{
-  width: 200px;
-  height: 25px;
-  margin-bottom: 20px;
+.container:hover .formulario{
+    /* Aligns */
+    transform: rotateY(360deg);
 }
 
 .titulo-label{
-  color: #fff;
-  margin: 20px;
-}
+    /* Colors */
+    color: #fff;
 
-.formulario button{
-  width: 200px;
-  padding: 8px;
+    /* Aligns */
+    margin: 20px;
 }
 
 .alura-logo {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+    /* Sizes */
+    width: 40px;
+
+    /* Aligns */
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 #resultado{
-  color: #fff;
+    /* Colors */
+    color: #fff;
 }
